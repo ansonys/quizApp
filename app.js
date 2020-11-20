@@ -19,7 +19,7 @@ const quizData = [
         b: "ノーマン",
         c: "レイ",
         d: "フィル",
-        correct: "c"
+        correct: "b"
     }, {
         question: "進撃の巨人の鎧の巨人の正体は？",
         a: "エレン",
@@ -96,7 +96,7 @@ submitBtn.addEventListener("click", () => {
         if(currentQuiz < quizData.length) {
             loadQuiz();
         } else {
-        quiz.innerHTML = `<h2 style="center">正答数は${score}/${quizData.length}で</h2> <h2 style="text-align: center;">正解率は<span style="color: red">${(score / quizData.length) * 100}%</span>です</h2> <button onclick="location.reload()">Reload</button>`;
+        quiz.innerHTML = `<h2 style="center">正当数は${score}/${quizData.length}で</h2> <h2 style="text-align: center;">正解率は<span style="color: red">${(score / quizData.length) * 100}%</span>です</h2> <button onclick="location.reload()">Reload</button>`;
     }
     }
 
